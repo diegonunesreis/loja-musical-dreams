@@ -1,0 +1,22 @@
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.deps.json
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.runtimeconfig.json
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.runtimeconfig.dev.json
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.dll
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.pdb
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.csprojResolveAssemblyReference.cache
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.csproj.CoreCompileInputs.cache
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.AssemblyInfoInputs.cache
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.AssemblyInfo.cs
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.dll
+C:\Users\diego\Documents\GitHub\LojaDeInstrumentosMusicais\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.pdb
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.deps.json
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.runtimeconfig.json
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.runtimeconfig.dev.json
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.dll
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\bin\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.pdb
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.csprojResolveAssemblyReference.cache
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.csproj.CoreCompileInputs.cache
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.AssemblyInfoInputs.cache
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.AssemblyInfo.cs
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.dll
+C:\Users\SUPORTEmaster101\Documents\Visual Studio 2017\ASPNETMVCProject\loja-musical-dreams-master\LojaDeInstrumentosMusicais\obj\Debug\netcoreapp2.0\LojaDeInstrumentosMusicais.pdb

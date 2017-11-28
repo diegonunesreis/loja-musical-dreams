@@ -1,0 +1,52 @@
+﻿@{ 
+    ViewData ["Title"] = "Carrinho";
+}
+@using LojaDeInstrumentosMusicais.Models;
+@model List<itemPedido>
+
+<h3>Meu Carrinho</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-6">Item</div>
+            <div class="col-md-2">Preço Unitário</div>
+            <div class="col-md-2">Quantidade</div>
+            <div class="col-md-2">Subtotal</div>
+        </div>
+    </div>
+    @foreach (var p in @Model)
+    {
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="~/images/musical-instruments/instrument-@(p.Produto.Id).jpg" />
+                </div>
+                <div class="col-md-3">@p.Produto.Nome</div>
+                <div class="col-md-2">R$ @p.PrecoUnitario</div>
+                <div class="col-md-2">@p.Quantidade</div>
+                <div class="col-md-2">R$ @p.Subtotal</div>
+            </div>
+        </div>
+    }
+
+    <div class="panel-footer">
+        <div class="row">
+            <div class="col-md-10">
+                Total: @Model.Count @(Model.Count == 1 ? "item" : "itens")
+            </div>
+            <div class="col-md-2">
+                R$ @Model.Sum(i => i.Subtotal)
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <a asp-action="resumo" 
+           asp-controller="pedido"
+           class="btn btn-success pull-right">Finalizar Pedido</a>
+       
+    </div>
+</div>
