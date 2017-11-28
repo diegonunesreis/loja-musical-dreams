@@ -56,3 +56,8 @@
 .panel-body img{
     max-width: 100%
 }
+
+.row-center {
+    display: flex;
+    align-items: center;
+}

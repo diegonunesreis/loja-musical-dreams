@@ -1,8 +1,8 @@
 ﻿@{ 
     ViewData ["Title"] = "Carrinho";
 }
-@using LojaDeInstrumentosMusicais.Models;
-@model List<itemPedido>
+@using LojaDeInstrumentosMusicais.Models.ViewModels;
+@model CarrinhoViewModel
 
 <h3>Meu Carrinho</h3>
 
@@ -15,10 +15,10 @@
             <div class="col-md-2">Subtotal</div>
         </div>
     </div>
-    @foreach (var p in @Model)
+    @foreach (var p in @Model.Itens)
     {
         <div class="panel-body">
-            <div class="row">
+            <div class="row row-center">
                 <div class="col-md-3">
                     <img src="~/images/musical-instruments/instrument-@(p.Produto.Id).jpg" />
                 </div>
@@ -33,10 +33,10 @@
     <div class="panel-footer">
         <div class="row">
             <div class="col-md-10">
-                Total: @Model.Count @(Model.Count == 1 ? "item" : "itens")
+                Total: @Model.Itens.Count @(Model.Itens.Count == 1 ? "item" : "itens")
             </div>
             <div class="col-md-2">
-                R$ @Model.Sum(i => i.Subtotal)
+                R$ @Model.Total
             </div>
         </div>
     </div>

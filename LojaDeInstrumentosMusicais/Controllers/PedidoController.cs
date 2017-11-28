@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using LojaDeInstrumentosMusicais.Models;
+using LojaDeInstrumentosMusicais.Models.ViewModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -45,7 +46,9 @@ namespace LojaDeInstrumentosMusicais.Controllers
                 new itemPedido(1, produtos[4], 1),
                 new itemPedido(1, produtos[2], 7)
             };
-            return View(itensCarrinho);
+
+            CarrinhoViewModel carrinhoViewModel = new CarrinhoViewModel(itensCarrinho);
+            return View(carrinhoViewModel);
         }
 
         public IActionResult Resumo()
