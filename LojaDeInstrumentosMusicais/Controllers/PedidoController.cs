@@ -40,20 +40,29 @@ namespace LojaDeInstrumentosMusicais.Controllers
 
         public IActionResult Carrinho()
         {
-            List<itemPedido> itensCarrinho = new List<itemPedido>
-            {
-                new itemPedido(1, produtos[0], 3),
-                new itemPedido(1, produtos[4], 1),
-                new itemPedido(1, produtos[2], 7)
-            };
-
-            CarrinhoViewModel carrinhoViewModel = new CarrinhoViewModel(itensCarrinho);
+            CarrinhoViewModel carrinhoViewModel = getCarrinhoViewModel();
             return View(carrinhoViewModel);
         }
 
         public IActionResult Resumo()
         {
-            return View();
+            CarrinhoViewModel carrinhoViewModel = getCarrinhoViewModel();
+            return View(carrinhoViewModel);
+        }
+
+
+
+        private CarrinhoViewModel getCarrinhoViewModel()
+        {
+            List<itemPedido> itensCarrinho = new List<itemPedido>
+            {
+                new itemPedido(1, produtos[0], 3),
+                new itemPedido(2, produtos[4], 1),
+                new itemPedido(3, produtos[2], 7)
+            };
+
+            CarrinhoViewModel carrinhoViewModel = new CarrinhoViewModel(itensCarrinho);
+            return carrinhoViewModel;
         }
     }
 }
