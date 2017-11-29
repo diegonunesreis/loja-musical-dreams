@@ -7,16 +7,18 @@ namespace LojaDeInstrumentosMusicais.Models.ViewModels
 {
     public class CarrinhoViewModel
     {
-        public List<itemPedido> Itens { get; private set; }
+        public List<ItemPedido> Itens { get; private set; }
         public decimal Total {
             get {
                 return this.Itens.Sum(i => i.Subtotal); 
             }
         }
 
-        public CarrinhoViewModel(List<itemPedido> itens)
+        public CarrinhoViewModel(List<ItemPedido> itens)
         {
             this.Itens = itens;
-        }  
+        }
+
+
     }
 }

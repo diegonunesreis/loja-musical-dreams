@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LojaDeInstrumentosMusicais.Models
 {
-    public class itemPedido
+    public class ItemPedido
     {
         public int Id { get; private set; }
         public Produto Produto { get; set; }
@@ -16,13 +16,20 @@ namespace LojaDeInstrumentosMusicais.Models
                 return this.Quantidade * this.PrecoUnitario;
             }
         }
-
-        public itemPedido(int id, Produto produto, int quantidade)
+        public ItemPedido(int id, Produto produto, int quantidade) : this(produto, quantidade)
         {
             this.Id = id;
+        }
+
+        public ItemPedido(Produto produto, int quantidade)
+        {
             this.Produto = produto;
             this.Quantidade = quantidade;
             this.PrecoUnitario = produto.Preco;
+        }
+        public ItemPedido()
+        {
+
         }
 
     }

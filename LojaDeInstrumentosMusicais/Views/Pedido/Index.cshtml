@@ -2,37 +2,51 @@
     ViewData["Title"] = "Página Inicial";
 
 }
-
+@model List<Produto>
 
 <h1>Página Inicial.</h1>
 <div id="my-carousel" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
+        @{
+            const int TAMANHO_PAGINA = 4;
+            int numPaginas = (int)Math.Ceiling((double)Model.Count() / TAMANHO_PAGINA);
+        }
 
-            <div class="row">
-                @for(int i = 0; i < 4; i++)
-                {
-                    <div class="col-md-3">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                 <img src="~/images/musical-instruments/instrument-@(Model[i].Id).jpg" /> 
-                            </div>
-                            <div class="panel-footer">
-                                <div>@Model[i].Nome</div>
-                                <div>R$ @Model[i].Preco</div>
-                                <div class="text-center">
-                                    @*@Html.ActionLink("Adicionar", "carrinho", "pedido")*@
-                                    <a asp-action="carrinho" asp-controller="pedido">Adicionar</a>
+        @for (int pagina = 0; pagina < numPaginas; pagina++)
+        {
+            <div class="item @(pagina == 0 ? "active" : "")">
+                <div class="row">
+                    @{
+                        var produtosDaPagina =
+                            Model
+                            .Skip(TAMANHO_PAGINA * pagina)
+                            .Take(TAMANHO_PAGINA);
+                    }
+
+                    @foreach (var produto in produtosDaPagina)
+                    {
+                        <div class="col-md-3">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <img src="~/images/musical-instruments/instrument-@(produto.Id).jpg" />
+                                </div>
+                                <div class="panel-footer">
+                                    <div>@(produto.Nome)</div>
+                                    <div>R$ @(produto.Preco)</div>
+                                    <div class="text-center">
+                                        <a asp-action="carrinho"
+                                           asp-route-produtoId="@(produto.Id)">Adicionar</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                }
-                
+                    }
+                </div>
             </div>
-        </div>
+         }
     </div>
+
 
     <!-- Controls -->
     <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
